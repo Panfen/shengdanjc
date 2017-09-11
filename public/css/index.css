@@ -1,0 +1,99 @@
+html,body{
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system,BlinkMacSystemFont,Roboto,Ubuntu,Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei UI,Microsoft YaHei,Source Han Sans CN,sans-serif
+}
+.fn-left{
+	float: left;
+}
+.fn-right{
+	float: right;
+}
+.fn-left, .fn-right{
+	display: inline;
+}
+.fn-clear:after{
+	visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+h2,h3{
+	padding: 0;
+	margin: 0;
+}
+ul,li{
+	list-style: none;
+}
+
+
+/*header*/
+.header{
+	padding: 10px 20px;
+	line-height: center;
+	background: #FDD100
+}
+.header h2{
+	margin: 28px 26px;
+	font-weight: 200;
+	font-family: "微软雅黑";
+	text-shadow: 0 0 1px #ccc;
+}
+
+/*content*/
+.block{
+	width: 100%;
+	height: 410px;
+	position: relative;
+	background: url(../img/pic1.jpg) no-repeat right center;
+}
+.block .info{
+	color: #000;
+	height: 100%;
+	padding: 120px 0 0 80px;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 2017;
+	background: rgba(255, 255, 255, 0.5);
+}
+.block .info ul{
+	margin-top: 20px
+}
+.block .info ul li{
+	margin-bottom: 4px;
+	position: relative;
+}
+.block .info ul li:before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 3px;
+	left: -28px;
+	display: inline-block;
+	background: url(../img/check.jpg) no-repeat center center;
+	background-size: 20px 20px;
+}
+.subcontent h3{
+	text-align: center;
+	margin: 80px 0 10px 0;
+	font-weight: 200;
+}
+.subcontent p{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.subcontent ul{
+	width: 90%;
+	margin: 0 auto;
+
+}
+.subcontent ul li{
+	width: 20%;
+	height: 300px;
+	border: 1px solid red;
+
+}

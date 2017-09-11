@@ -1,0 +1,28 @@
+{
+  "name": "shengdanjc",
+  "version": "1.0.0",
+  "description": "he nan shengdan jiang cai",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Panfen/shengdanjc.git"
+  },
+  "keywords": [
+    "shengdan",
+    "jiancai"
+  ],
+  "author": "panfen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Panfen/shengdanjc/issues"
+  },
+  "homepage": "https://github.com/Panfen/shengdanjc#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "path": "^0.12.7"
+  }
+}
