@@ -32,11 +32,11 @@ ul,li{
 /*header*/
 .header{
   line-height: center;
-  padding: 60px;
-  background: url(../img/pic1.jpg) no-repeat right center;
+  padding: 60px 0 60px 60px;
+  background: url(http://shengdanjs.oss-cn-beijing.aliyuncs.com/pic1.jpg) no-repeat right center;
 }
 .header h2{
-  margin: 28px 26px;
+  padding: 28px  0 0 26px;
   font-weight: 200;
   font-family: "微软雅黑";
   text-shadow: 0 0 1px #ccc;
@@ -46,7 +46,6 @@ ul,li{
 .subcontent{
   position: relative;
   padding: 50px 0;
-  margin-bottom: 40px;
 }
 .subcontent:last-child{
   margin-bottom: 0;
@@ -61,8 +60,9 @@ ul,li{
   margin-bottom: 20px;
 }
 .subcontent .intro{
-  width: 1040px;
+  max-width: 1080px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 .subcontent .intro p{
   text-align: left;
@@ -75,7 +75,7 @@ ul,li{
 .subcontent .intro p span{
   font-weight: 600;
   display: inline-block;
-  background: url(../img/check.jpg) no-repeat 0px 2px;
+  background: url(http://shengdanjs.oss-cn-beijing.aliyuncs.com/check.jpg) no-repeat 0px 2px;
   background-size: 20px 20px;
 }
 .subcontent .box{
@@ -85,7 +85,7 @@ ul,li{
   left: 0;
 }
 .subcontent ul{
-  width: 1040px;
+  max-width: 1040px;
   margin: 0 auto;
 }
 .subcontent ul li{
@@ -102,11 +102,11 @@ ul,li{
   position: absolute;
   top: 0;
   left: 0;
-  background: url(../img/pic2.jpg) repeat;
+  background: url(http://shengdanjs.oss-cn-beijing.aliyuncs.com/pic2.jpg) repeat;
   opacity: 0.1;
 }
 .subcontent.sub1{
-  min-height: 480px;
+  min-height: 500px;
 }
 .subcontent .box ul li{
   padding: 5px;
@@ -132,8 +132,8 @@ ul,li{
   background: rgba(0,0,0,0.8);
 }
 .subcontent .box ul li .introinfo::-webkit-scrollbar{
-    width: 4px;
-    background-color: #f5f5f5;
+  width: 4px;
+  background-color: #f5f5f5;
 }
 .subcontent .box ul li .introinfo p{
   margin: 10px;
@@ -152,17 +152,18 @@ ul,li{
   font-size: 16px;
 }
 .subcontent.sub2{
-  min-height: 480px;
+  min-height: 500px;
 }
 .subcontent.sub3{
-  min-height: 480px;
+  min-height: 440px;
 }
 .subcontent.sub3 .bg{
-  background: url(../img/pic3.jpg) repeat;
+  background: url(http://shengdanjs.oss-cn-beijing.aliyuncs.com/pic3.jpg) repeat;
 }
 .subcontent.sub3 .box ul li{
   background: none;
   box-shadow: none;
+  height: 264px;
 }
 .subcontent.sub3 .box ul li em{
   margin: 20px auto;
@@ -209,7 +210,7 @@ ul,li{
 .subcontent.sub3 .box ul li:nth-child(5) em{
   width: 30px;
   height: 30px;
-  background: url(../img/know.png) no-repeat center center;
+  background: url(http://shengdanjs.oss-cn-beijing.aliyuncs.com/know.png) no-repeat center center;
   background-size: 36px 36px;
 }
 .subcontent.sub3 .box ul li h4{
@@ -247,7 +248,7 @@ ul,li{
   position: absolute;
   top: 0px;
   left: 0px;
-  padding: 20px 0;
+  padding: 40px 0 60px 0;
 }
 
 /*footer*/
@@ -257,14 +258,17 @@ ul,li{
   background: #333;
 }
 .footer .wrap{
-  width: 1040px;
+  max-width: 1040px;
   margin: 0 auto;
   padding: 20px 0;
 }
 .footer .wrap ul li{
   width: 24%;
+  min-width: 200px;
+  padding-left: 20px; 
   position: relative;
   display: inline-block;
+  margin-top: 20px; 
 }
 .footer .wrap ul li h4{
   font-size: 15px;
@@ -278,7 +282,7 @@ ul,li{
 .footer .wrap ul li img{
   position: absolute;
   top: 56px;
-  left: 0px;
+  left: 20px;
 }
 .footer .copyright{
   color: #fff;
@@ -286,4 +290,47 @@ ul,li{
   background: #111;
   line-height: 40px;
   text-align: center;
+}
+
+/* MEDIA QUERY
+============================== */
+/* Smaller than standard 960 (devices and browsers) */
+
+@media only screen and (min-width: 676px) and (max-width: 1110px) {
+  .subcontent .box ul li{
+    margin: 0 0 20px 20px;
+  }
+  .subcontent.sub1, .subcontent.sub2{
+    min-height: 810px;
+  }
+  .subcontent.sub3{
+    min-height: 670px
+  }
+}
+@media only screen and (min-width: 456px) and (max-width: 676px) {
+  .subcontent .box ul li{
+    margin: 0 0 20px 20px;
+  }
+  .subcontent.sub1, .subcontent.sub2{
+    min-height: 1130px;
+  }
+  .subcontent.sub3{
+    min-height: 950px
+  }
+}
+
+@media only screen and (max-width: 456px) {
+  .subcontent .box ul li{
+    position: static;
+    display: block;
+    margin: 20px auto;
+    float: none;
+    position: relative;
+  }
+  .subcontent.sub1, .subcontent.sub2{
+    min-height: 1770px;
+  }
+  .subcontent.sub3{
+    min-height: 1540px
+  }
 }
