@@ -116,6 +116,9 @@ ul,li{
 }
 .subcontent .box ul li:hover .introinfo{
   opacity: 1;
+  -moz-opacity: 1;  
+  -khtml-opacity: 1; 
+  filter: Alpha(opacity=100);
 }
 .subcontent .box ul li .introinfo{
   width: 100%;
@@ -125,6 +128,9 @@ ul,li{
   left: 0;
   color: #eee;
   opacity: 0;
+  -moz-opacity: 0;  
+  -khtml-opacity: 0; 
+  filter: Alpha(opacity=0);
   transition: opacity .5s ease;
   padding: 10px;
   font-size: 12px;
